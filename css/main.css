@@ -7,15 +7,16 @@ html {
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
     background: url(../img/texture.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 footer {
-    color: white;
     width: 100%;
+    color: white;
+    background-color: black;
 }
 
 hr {
@@ -39,10 +40,6 @@ img {
     color: #7d97ad;
 }
 
-#footer {
-    background-color: black;
-}
-
 #logo {
     float: left;
     width: 100px;
@@ -53,6 +50,7 @@ img {
 #main {
     background-color: white;
     flex: 1;
+    padding-bottom: 20px;
 }
 
 #name-container * {
@@ -98,6 +96,3 @@ img {
         padding-left: 20px;
     }
 }
-
-
-
