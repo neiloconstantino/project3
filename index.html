@@ -11,53 +11,98 @@
         
     </head>
     <body>
-        <div id="main" class="container">
+        <div class="container main">
             <header class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 text-left">
-                    <img id="logo" class="img-responsive" src="img/udacity-logo.svg" alt="Udacity logo">
+                    <img class="logo img-responsive" src="img/udacity-logo.svg" alt="Udacity logo">
                 </div>
-                <div id="name-container" class="col-xs-12 col-sm-6 col-md-6 text-right">
-                    <h1 class="text-sm-center">Neil O. Constantino</h1>
+                <div class="name-container col-xs-12 col-sm-6 col-md-6 text-right">
+                    <h1 class="name text-sm-center">Neil O. Constantino</h1>
                     <h4 class="text-sm-center">Software Engineer</h4>
                 </div>
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </header>
-            <hr>
             <div class="row">
-                <img id="banner" class="img-responsive" src="img/softwareengineering.jpg" alt="Software Engineering image">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="carousel-image" src="img/banner1.jpg" alt="Banner 1">
+                            </div>
+                            <div class="item">
+                                <img class="carousel-image" src="img/banner2.jpg" alt="Banner 2">
+                            </div>
+                            <div class="item">
+                                <img class="carousel-image" src="img/banner3.jpg" alt="Banner 3">
+                            </div>
+                            <div class="item">
+                                <img class="carousel-image" src="img/banner4.jpg" alt="Banner 4">
+                            </div>
+                            <div class="item">
+                                <img class="carousel-image" src="img/banner5.jpg" alt="Banner 5">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="featured-work" class="row">
-                <h2>Featured Work</h2>
-                <div class="col-md-4 text-center">
-                    <figure>
-                        <a href="https://en.wikipedia.org/wiki/Air_Force_Satellite_Control_Network" target="_blank">
-                            <img class="img-responsive" src="img/afscn.png" alt="Air Force Satellite Control Network image">
-                        </a>
-                        <figcaption>Air Force Satellite Control Network</figcaption>
-                        <a href="https://en.wikipedia.org/wiki/Air_Force_Satellite_Control_Network" target="_blank">https://en.wikipedia.org/...</p>
-                    </figure>
+            <div class="featured-work row">
+                <div class="col-md-12">
+                    <h2 class="featured-work-header">Featured Work</h2>
                 </div>
-                <div class="col-md-4 text-center">
-                    <figure>
-                        <a href="https://en.wikipedia.org/wiki/Military_Satellite_Communications_Systems_Wing" target="_blank">
-                            <img class="img-responsive" src="img/milsatcom.png" alt="Military Satellite Communications image">
-                        </a>
-                        <figcaption>Military Satellite Communications</figcaption>
-                        <a href="https://en.wikipedia.org/wiki/Military_Satellite_Communications_Systems_Wing" target="_blank">https://en.wikipedia.org/...</p>
-                    </figure>
+                <div class="work-item col-md-4 text-center">
+                    <a href="https://en.wikipedia.org/wiki/Air_Force_Satellite_Control_Network" target="_blank">
+                        <img class="work-image img-responsive" src="img/afscn.png" alt="Air Force Satellite Control Network image">
+                    </a>
+                    <p class="figcaption">Air Force Satellite Control Network</p>
+                    <a href="https://en.wikipedia.org/wiki/Air_Force_Satellite_Control_Network" target="_blank">https://en.wikipedia.org/...</a>
                 </div>
-                <div class="col-md-4 text-center">
-                    <figure>
-                        <a href="http://www.gps.gov/" target="_blank">
-                            <img class="img-responsive" src="img/gps.jpg">
-                        </a>
-                        <figcaption>Global Positioning System</figcaption>
-                        <a href="http://www.gps.gov/" target="_blank">http://www.gps.gov/</a>
-                    </figure>
+                <div class="work-item col-md-4 text-center">
+                    <a href="https://en.wikipedia.org/wiki/Military_Satellite_Communications_Systems_Wing" target="_blank">
+                        <img class="work-image img-responsive" src="img/milsatcom.png" alt="Military Satellite Communications image">
+                    </a>
+                    <p class="figcaption">Military Satellite Communications</p>
+                    <a href="https://en.wikipedia.org/wiki/Military_Satellite_Communications_Systems_Wing" target="_blank">https://en.wikipedia.org/...</a>
+                </div>
+                <div class="work-item col-md-4 text-center">
+                    <a href="http://www.gps.gov/" target="_blank">
+                        <img class="work-image img-responsive" src="img/gps.jpg">
+                    </a>
+                    <p class="figcaption">Global Positioning System</p>
+                    <a href="http://www.gps.gov/" target="_blank">http://www.gps.gov/</a>
                 </div>
             </div>
         </div>
         <footer class="container">
-            <p>© 2016 Neil O. Constantino</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>© 2016 Neil O. Constantino</p>
+                </div>
+            </div>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
